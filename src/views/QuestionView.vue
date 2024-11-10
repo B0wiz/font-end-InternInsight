@@ -94,7 +94,7 @@ onMounted(fetchData)
           {{ post.Description }}
         </span>
         <RouterLink
-          :to="`posts/${post.Review_ID}`"
+          :to="`questions/${post.Review_ID}`"
           class="text-xs font-medium text-white bg-gradient-to-b from-button to-button/40 px-4 py-1 rounded-lg border-border border shadow-sm md:text-sm lg:text-base"
         >
           Read more

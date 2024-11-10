@@ -22,31 +22,31 @@ const router = createRouter({
           component: PostView,
         },
         {
+          path: '/posts/:id',
+          name:'postdetails',
+          component: PostDetail
+        },
+        {
           path: 'reviews',
           name:'reviews',
           component: ReviewView,
+        },
+        {
+          path: '/reviews/:id',
+          name:'reviewdetail',
+          component: ReviewDetail
         },
         {
           path: 'questions',
           name:'questions',
           component: QuestionView,
         },
+        {
+          path: '/questions/:id',
+          name:'questiondetails',
+          component: QuestionDetail
+        },
       ]
-    },
-    {
-      path: '/posts/:id',
-      name:'postdetails',
-      component: PostDetail
-    },
-    {
-      path: '/reviews/:id',
-      name:'reviewdetail',
-      component: ReviewDetail
-    },
-    {
-      path: '/questions/:id',
-      name:'questiondetails',
-      component: QuestionDetail
     },
   ],
 })
